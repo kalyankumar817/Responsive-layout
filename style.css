@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: auto; /* Rows adjust to content */
+    gap: 10px; /* Space between grid items */
+    grid-template-areas: 
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9"
+        "box10 box10 box10"; /* Box 10 spans across three columns */
+}
+
+.box {
+    border: 2px solid red;
+    padding: 50px; /* Adjust as needed */
+    text-align: center;
+}
+
+#box1 { grid-area: box1; }
+#box2 { grid-area: box2; }
+#box3 { grid-area: box3; }
+#box4 { grid-area: box4; }
+#box5 { grid-area: box5; }
+#box6 { grid-area: box6; }
+#box7 { grid-area: box7; }
+#box8 { grid-area: box8; }
+#box9 { grid-area: box9; }
+#box10 { grid-area: box10; } /* Box 10 spans entire last row */
